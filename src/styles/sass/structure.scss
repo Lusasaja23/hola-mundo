@@ -1,0 +1,88 @@
+@use './reset.scss';
+@use './variables.scss';
+
+body {
+    padding: 25px;
+    background: variables.$black;
+    color: variables.$white;
+    font-family: variables.$all;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (width <= 720px) {
+        max-height: 100svh;
+    }
+
+    & header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+
+        & .logo {
+            filter: drop-shadow(0px 0px 2px variables.$white);
+            cursor: pointer;
+            transition: filter 0.5s ease, margin 0.5s ease-in, transform 0.8s ease;
+            &:hover {
+                transform: scale(1.1);
+                filter: drop-shadow(0px 0px 0 variables.$white);
+                margin: 0 10px;
+            }
+        }
+        
+        & nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid variables.$secondary;
+            padding-bottom: 10px;
+            width: 20%;
+
+            & i {
+                font-size: 1.3em;
+                cursor: pointer;
+                color: variables.$accent-300;
+                transition: color 0.3s ease;
+                &:hover {
+                    color: variables.$white;
+                }
+            }
+        }
+    } 
+
+    & main {
+        margin-bottom: 40px;
+    }
+
+    & footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        opacity: 75%;
+        &:hover {
+            opacity: 100%;
+        }
+
+        & .credits {
+            font-size: 0.75em;
+
+            & .author {
+                color: variables.$accent-100;
+                &:hover {
+                    color: variables.$accent-300;
+                }
+            }
+        }
+
+        & .version {
+            font-size: 0.9em;
+            font-family: variables.$header;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "out",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sass": "npx sass --style expanded --no-source-map --watch"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4",
+    "next": "14.3.0-canary.9",
+    "react": "^18",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18",
+    "react-hash-link": "^1.0.2",
+    "react-icons": "^5.2.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "sass": "^1.77.4"
+  }
+}

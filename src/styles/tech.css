@@ -1,0 +1,272 @@
+/* ! COLORES */
+/* ! FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&display=swap");
+main {
+  width: 90%;
+}
+main .container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  gap: 50px;
+}
+main .container .header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .container .header:hover .text .important {
+  border-bottom: 2px solid #d3be6f;
+}
+main .container .header .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 75%;
+}
+main .container .header .text .important {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px solid #4D648D;
+  padding-bottom: 10px;
+  gap: 30px;
+  transition: border-bottom 0.3s ease-in;
+}
+main .container .header .text .important h1 {
+  font-size: 3em;
+  font-family: "Reddit Mono", monospace;
+}
+main .container .header .text .important hr {
+  border: none;
+  border-left: 2px solid #404E6C;
+  height: 50px;
+  width: 0;
+}
+main .container .header .text .important span {
+  font-size: 1.1em;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+main .container .header .text .important small {
+  font-size: 0.8em;
+  border: 2px solid #404E6C;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  cursor: default;
+  user-select: none;
+  transition: transform 0.3s ease-in;
+}
+main .container .header .text .important small:hover {
+  transform: scale(1.1);
+}
+main .container .header .text .important small.frontend {
+  color: #02be70;
+  border: 2px solid #02be70;
+}
+main .container .header .text .important small.backend {
+  color: #0660c7;
+  border: 2px solid #0660c7;
+}
+main .container .header .text .important small.fullstack {
+  color: #048f9c;
+  border: 2px solid #048f9c;
+}
+main .container .header .logo {
+  padding: 10px;
+  border-radius: 20px;
+  user-select: none;
+  border: 5px solid #181829;
+  background: rgb(18, 18, 31);
+  transition: background 0.5s ease;
+}
+main .container .header .logo:hover {
+  background: #0F0F1A;
+}
+main .container .main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 40px;
+}
+main .container .main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .container .main .content .nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+main .container .main .content .nav h2 {
+  font-size: 1.8em;
+}
+main .container .main .content .nav nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+main .container .main .content .nav nav a {
+  font-size: 0.9em;
+  background: rgb(18, 18, 31);
+  padding: 10px 20px;
+  border: 3px solid #404E6C;
+  border-radius: 20px;
+  transition: background 0.3s ease-in;
+}
+main .container .main .content .nav nav a:hover {
+  background: #1b1b2f;
+}
+main .container .main .content .tutorialContainer {
+  display: flex;
+  flex-direction: column;
+}
+main .container .main .content .tutorialContainer .tutorialFragment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+}
+main .container .main .content .tutorialContainer .tutorialFragment h3 {
+  text-align: center;
+  font-size: 2em;
+}
+main .container .main .content .tutorialContainer .tutorialFragment p {
+  text-align: center;
+  font-family: "Reddit Mono", monospace;
+  width: 90%;
+}
+main .container .main .content .tutorialContainer .tutorialFragment .code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .container .main .content .tutorialContainer .tutorialFragment .code img {
+  object-fit: cover;
+  filter: drop-shadow(0 0 5px #404E6C);
+  transition: filter 0.5s ease;
+}
+main .container .main .content .tutorialContainer .tutorialFragment .code img:hover {
+  filter: none;
+}
+main .container .main .content .tutorialContainer .tutorialFragment .code .interactive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main .container .main .content .tutorialContainer .tutorialFragment .code .interactive a, main .container .main .content .tutorialContainer .tutorialFragment .code .interactive button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1b1b2f;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1.2em;
+  color: #e0e0e0;
+  cursor: pointer;
+  user-select: none;
+}
+main .container .main .content .tutorialContainer .tutorialFragment .code .interactive a:hover, main .container .main .content .tutorialContainer .tutorialFragment .code .interactive button:hover {
+  transform: scale(1.1);
+}
+main .container .main .content .tutorialContainer .tutorialFragment .code .interactive a:active, main .container .main .content .tutorialContainer .tutorialFragment .code .interactive button:active {
+  color: #d3be6f;
+}
+main .container .main .content .resourcesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .container .main .content .resourcesContainer h2 {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: "Reddit Mono", monospace;
+  margin-bottom: 20px;
+}
+main .container .main .content .resourcesContainer .resourcesFragment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+main .container .main .content .resourcesContainer .resourcesFragment a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #18182a;
+  padding: 30px 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in;
+}
+main .container .main .content .resourcesContainer .resourcesFragment a:hover {
+  transform: scale(1.1);
+}
+main .container .main .content .resourcesContainer .resourcesFragment a .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main .container .main .content .resourcesContainer .resourcesFragment a .top h3 {
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80%;
+}
+main .container .main .content .resourcesContainer .resourcesFragment a .top small {
+  font-size: 0.7em;
+  background: #0F0F1A;
+  font-family: "Reddit Mono", monospace;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #404E6C;
+}
+main .container .main .content .resourcesContainer .resourcesFragment a img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+main .container .main .content .resourcesContainer .resourcesFragment a .disclaimer {
+  font-size: 0.6em;
+  width: 70%;
+  text-align: center;
+}
+main .container .main .related {
+  display: flex;
+  flex-direction: column;
+  background: rgb(18, 18, 31);
+  padding: 30px 40px;
+  gap: 20px;
+  height: max-content;
+}
+main .container .main .related h2 {
+  font-size: 1.2em;
+  text-align: center;
+}
+main .container .main .related .container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  gap: 20px;
+}
+main .container .main .related .container .item {
+  background: #0F0F1A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background 0.3s ease-out;
+}
+main .container .main .related .container .item:hover {
+  background: #18182a;
+}

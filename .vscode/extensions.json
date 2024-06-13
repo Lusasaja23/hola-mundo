@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "sdras.night-owl",
+        "pkief.material-product-icons",
+        "pkief.material-icon-theme",
+        "nguyenoss.html-to-css-autocompletion",
+        "formulahendry.auto-complete-tag",
+        "formulahendry.auto-rename-tag",
+        "kisstkondoros.vscode-gutter-preview",
+        "oderwat.indent-rainbow"
+    ]
+}

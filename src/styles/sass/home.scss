@@ -1,0 +1,73 @@
+@use './variables';
+
+main[of='home'] {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px variables.$accent-200;
+    padding: 40px 0;
+    border-radius: 8px;
+    transition: box-shadow 0.8s ease, background 0.5s ease;
+    &:hover {
+        box-shadow: 0px 0px 5px variables.$accent-200;
+        background: variables.$primary;
+    }
+
+    & img {
+        filter: drop-shadow(0 0 5px variables.$white);
+        transition: filter 0.3s ease;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &:hover {
+            filter: none;
+        }
+    }
+
+    & h1 {
+        font-family: variables.$header;
+        font-weight: normal;
+        font-size: 3em;
+        margin-bottom: 20px;
+        line-height: 1;
+        user-select: none;
+        cursor: pointer;
+        transition: filter 0.8s ease, transform 0.5s ease;
+        &:hover {
+            filter: drop-shadow(0 0 3px variables.$white);
+            transform: scale(1.1);
+        }
+    }
+
+    & .randomTech {
+        font-size: 1.3em;
+        background: transparent;
+        border: 3px outset variables.$accent-300;
+        color: variables.$white;
+        padding: 10px 20px;
+        margin-bottom: 12.5px;
+        transition: background 0.3s ease, border 0.5s ease;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover {
+            cursor: pointer;
+            border: 3px inset variables.$accent-300;
+            background: variables.$primary;
+        }
+    }
+
+    & .extra {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        gap: 5px;
+
+        & small {
+            display: inline;
+            font-size: 0.65em;
+            font-family: "Reddit Mono", monospace;
+        }
+    }
+}

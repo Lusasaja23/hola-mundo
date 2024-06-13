@@ -1,0 +1,29 @@
+/* ! COLORES */
+$white: #e0e0e0;
+$black: #0F0F1A;
+
+$primary: rgb(18, 18, 31);
+$secondary: #d3be6f;
+$accent-100: #4D648D;
+$accent-200: #404E6C;
+$accent-300: #A2B9BC;
+
+$frontend: #02be70;
+$backend: #0660c7;
+$fullstack: mix($frontend, $backend);
+
+$html: rgb(241,101,41);
+$css: rgb(51,170,221);
+$js: rgb(255,202,40);
+$ts: rgb(0,122,204);
+$react: rgb(83,193,222);
+$vue: rgb(65,184,131);
+$python: rgb(34,112,177);
+$cpp: rgb(0,89,156);
+$java: rgb(83,130,161);
+
+/* ! FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&display=swap');
+
+$header: 'Reddit Mono', monospace;
+$all: 'Merriweather', serif;

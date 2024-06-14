@@ -1,10 +1,11 @@
 'use client'
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Image from "next/image";
 import { Techs } from '../data/techs.js'
 import { LoadingPage, LoadingInline } from "../components/Loading";
+import TechLogo from "../components/home/TechLogo";
+import HelloWorldText from "../components/home/HelloWorldText";
 
 import '../styles/home.css'
 
@@ -24,13 +25,13 @@ export default function HomePage() {
     return randomData;
   }
 
- function handleRandomTech() {
-    const newRandomTech = Techs[Math.floor(Math.random() * Techs.length)];
-    if (newRandomTech.name !== randomTech.name) {
-     setRandomTech(newRandomTech);
-    } else {
-      handleRandomTech();
-    }
+  function handleRandomTech() {
+      const newRandomTech = Techs[Math.floor(Math.random() * Techs.length)];
+      if (newRandomTech.name !== randomTech.name) {
+      setRandomTech(newRandomTech);
+      } else {
+        handleRandomTech();
+      }
   }
 
   if (!randomTech) {
@@ -41,19 +42,8 @@ export default function HomePage() {
     <>
       <Header></Header>
       <main of='home'>
-        <a href={randomTech.resources[Math.floor(Math.random() * randomTech.resources.length)]}
-          target="_blank" 
-          rel="noopener noreferrer">
-          <Suspense fallback={<LoadingInline></LoadingInline>}>
-            <Image 
-              src={randomTech.logo} 
-              height={100} 
-              width={100} 
-              alt={`Logo de ${randomTech.title}`} 
-              title={`Logo de ${randomTech.title}`}/>
-          </Suspense>
-        </a>
-        <h1>¡Hola mundo!</h1>
+        <TechLogo randomTech={randomTech}></TechLogo>
+        <HelloWorldText tech={randomTech}></HelloWorldText>
         <button className="randomTech" onClick={handleRandomTech}>Tecnología aleatoria</button>
         <section className="extra">
           <small><i className="bx bx-brain"></i> {randomExtraData(randomTech)}</small>

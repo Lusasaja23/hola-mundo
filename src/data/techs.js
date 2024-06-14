@@ -9,47 +9,54 @@ export const Techs = [
         age: '1995',
         resources: [
             {
+                type: 'web',
                 from: 'ManzDev',
                 link: 'https://lenguajehtml.com/',
                 title: 'Guía sobre el Lenguaje HTML',
                 image: '/assets/resources-preview/html/lenguajehtml.png'
             },
             {
+                type: 'web',
                 from: 'ManzDev',
                 link: 'https://manzdev.github.io/htmlreally/',
                 title: 'Test de HTML',
                 image: '/assets/resources-preview/html/htmlreally.png'
             },
             {
+                type: 'web',
                 from: 'Mozilla Developers Network',
                 link: 'https://developer.mozilla.org/es/docs/Learn/HTML',
                 title: 'Documentación y guía de HTML',
                 image: '/assets/resources-preview/html/mdn-html.png'
             },
             {
-                from: 'FawzWeb',
+                type: 'web',
+                from: 'FaztWeb',
                 link: 'https://www.faztweb.com/html',
                 title: 'Introducción al lenguaje HTML',
                 image: '/assets/resources-preview/html/fazt-html.png'
             },
             {
+                type: 'web',
                 from: 'Bluuweb',
                 link: 'https://bluuweb.dev/01-html/',
                 title: 'Tutorial de HTML',
                 image: '/assets/resources-preview/html/bluuweb-html.png'
             },
             {
+                type: 'web',
                 from: 'JonMircha',
                 link: 'https://jonmircha.com/html#%C2%BFqu%C3%A9-es-html%3F',
                 title: 'Blog de HTML',
                 image: '/assets/resources-preview/html/mircha-html.png'
             },
             {
+                type: 'web',
                 from: 'W3Schools',
                 link: 'https://www.w3schools.com/html/',
                 title: 'Introducción a HTML',
                 image: '/assets/resources-preview/html/w3s-html.png'
-            }
+            },
         ],
         tutorial: [
             {
@@ -71,10 +78,18 @@ export const Techs = [
             curius: [
                 'HTML: Hypertext Markup Language o Lenguaje de Marcado de Hipertexto', 
                 '¿Conoces HTMX? Estuvo de moda hace un tiempo', 
-                'Todas las páginas y aplicaciones web utilizan HTML'],
+                'Todas las páginas y aplicaciones web utilizan HTML',
+                '¿Conoces la etiqueta "blink"? ¿No? Es mejor así',
+                'Te sorprendería lo dificil que era declarar un "!DOCTYPE" antes de HTML5'
+                
+            ],
             phrases: [
                 'Lo perfecto es enemigo de lo bueno, si no ayuda, ignoralo por completo', 
-                'Estructura y estilo no se deben mezclar si el entendimiento quieres preservar']
+                'Estructura y estilo no se deben mezclar si el entendimiento quieres preservar',
+                'En la simplicidad está la claridad; complica y la confusión reinará',
+                'Un código limpio es como un río claro, fácil de seguir y bello de contemplar',
+                'El contenido es rey, pero la usabilidad es su reina'
+            ]
         }
     },
     {
@@ -85,7 +100,64 @@ export const Techs = [
         description: 'Usado para diseñar y estilizar páginas web.',
         logo: '/assets/techs-logos/css-logo.svg',
         age: '1996',
-        resources: ['https://lenguajecss.com/', 'https://developer.mozilla.org/es/docs/Learn/CSS', 'https://www.faztweb.com/css', 'https://bluuweb.dev/02-css/', 'https://www.youtube.com/watch?v=hrxjBqZWsb0', 'https://www.youtube.com/watch?v=fxEBgbKSM98', 'https://jonmircha.com/html#%C2%BFqu%C3%A9-es-css%3F', 'https://www.w3schools.com/css/'],
+        resources: [
+            {
+                type: 'web',
+                from: 'ManzDev',
+                link: 'https://lenguajecss.com/',
+                title: 'Guía sobre el Lenguaje CSS',
+                image: '/assets/resources-preview/css/lenguajecss.png'
+            },
+            {
+                type: 'web',
+                from: 'Mozilla Developers Network',
+                link: 'https://developer.mozilla.org/es/docs/Learn/CSS',
+                title: 'Documentación de CSS',
+                image: '/assets/resources-preview/css/mdncss.png'
+            },
+            {
+                type: 'web',
+                from: 'FaztWeb',
+                link: 'https://www.faztweb.com/css',
+                title: 'Blog sobre CSS',
+                image: '/assets/resources-preview/css/faztcss.png'
+            },
+            {
+                type: 'web',
+                from: 'Bluuweb',
+                link: 'https://bluuweb.dev/02-css/',
+                title: 'Tutorial de CSS',
+                image: '/assets/resources-preview/css/bluuwebcss.png'
+            },
+            {
+                type: 'video',
+                from: 'Midudev',
+                link: 'https://www.youtube.com/watch?v=hrxjBqZWsb0',
+                title: 'Curso de CSS',
+                image: '/assets/resources-preview/css/midudevcss.png'
+            },
+            {
+                type: 'video',
+                from: 'Mouredev',
+                link: 'https://www.youtube.com/watch?v=fxEBgbKSM98',
+                title: 'Taller de CSS',
+                image: '/assets/resources-preview/css/mouredevcss.png'
+            },
+            {
+                type: 'web',
+                from: 'JonMircha',
+                link: 'https://jonmircha.com/html#%C2%BFqu%C3%A9-es-css%3F',
+                title: 'Guía de CSS',
+                image: '/assets/resources-preview/css/jonmirchacss.png'
+            },
+            {
+                type: 'web',
+                from: 'W3School',
+                link: 'https://www.w3schools.com/css/',
+                title: 'Curso de CSS',
+                image: '/assets/resources-preview/css/w3scss.png'
+            }
+        ],
         tutorial: [
             {
                 name: 'html-link',
@@ -120,11 +192,15 @@ export const Techs = [
                 'Sin CSS, la web no hubiera podido vender',
                 'No hay que ser un genio para entender la teoría del color',
                 'CSS: Cascading Style Sheets o Hojas de Estilo en Cascada',
-                'Adios a Flex y Grid CSS para lograr centrar'
+                'Adios a Flex y Grid CSS para lograr centrar',
+                'Más del 70% de programadores usa un preprocesador'
             ],
             phrases: [
                 'Portatibilidad antes que comodidad', 
-                'Estilizar no es ajeno a la accesibilidad, lo mejor siempre es adaptar'
+                'Estilizar no es ajeno a la accesibilidad, lo mejor siempre es adaptar',
+                'El color es la paleta del diseñador; con armonía, la página cobra vida',
+                'La media query es la voz del diseño adaptable; sin ella, la web se siente sorda',
+                'El CSS bien escrito es como un viento suave, guía sin ser notado'
             ]
         }
     },
@@ -136,37 +212,116 @@ export const Techs = [
         description: 'Base de la interactividad en los sitios web.',
         logo: '/assets/techs-logos/js-logo.svg',
         age: '1995',
-        resources: ['https://lenguajejs.com/javascript/', 'https://developer.mozilla.org/es/docs/Learn/JavaScript', 'https://faztweb.com/contenido/javascript', 'https://bluuweb.dev/04-javascript/javascript.html', 'https://www.aprendejavascript.dev/', 'https://www.youtube.com/watch?v=6cnFl9aHD5Y', 'https://jonmircha.com/javascript', 'https://www.w3schools.com/js/js_intro.asp', 'https://javascript.info/'],
+        resources: [
+            {
+                type: 'web',
+                from: 'Manzdev',
+                link: 'https://lenguajejs.com/javascript/',
+                title: 'Guía sobre Javascript',
+                image: '/assets/resources-preview/js/lenguajejs.png'
+            },
+            {
+                type: 'web',
+                from: 'Mozilla Developers Network',
+                link: 'https://developer.mozilla.org/es/docs/Learn/JavaScript',
+                title: 'Documentación y guía sobre Javascript',
+                image: '/assets/resources-preview/js/mdnjs.png'
+            },
+            {
+                type: 'video',
+                from: 'Faztweb',
+                link: 'https://www.youtube.com/watch?v=RqQ1d1qEWlE',
+                title: 'Curso de Javascript',
+                image: '/assets/resources-preview/js/faztjs.png'
+            },
+            {
+                type: 'web',
+                from: 'Bluuweb',
+                link: 'https://bluuweb.dev/04-javascript/javascript.html',
+                title: 'Tutorial de Javascript',
+                image: '/assets/resources-preview/js/bluuwebjs.png'
+            },
+            {
+                type: 'web',
+                from: 'No Detectado',
+                link: 'https://www.aprendejavascript.dev/',
+                title: 'Curso de Javascript',
+                image: '/assets/resources-preview/js/aprendejavascript.png'
+            },
+            {
+                type: 'video',
+                from: 'Mouredev',
+                link: 'https://www.youtube.com/watch?v=6cnFl9aHD5Y',
+                title: 'Javascript desde Cero',
+                image: '/assets/resources-preview/js/mouredevjs.png'
+            },
+            {
+                type: 'web',
+                from: 'JonMircha',
+                link: 'https://jonmircha.com/javascript',
+                title: 'Blog sobre Javascript',
+                image: '/assets/resources-preview/js/jonmirchajs.png'
+            },
+            {
+                type: 'web',
+                from: 'W3Schools',
+                link: 'https://www.w3schools.com/js/js_intro.asp',
+                title: 'Introducción a Javascript',
+                image: '/assets/resources-preview/js/w3sjs.png'
+            },
+            {
+                type: 'web',
+                from: 'Ilya Kantor',
+                link: 'https://es.javascript.info/',
+                title: 'Tutorial Moderno de Javascript',
+                image: '/assets/resources-preview/js/javascriptinfo.png'
+            }
+        ],
         tutorial: [
+            {
+                name: 'html-script',
+                title: 'Enlazar HTML y Javascript',
+                text: 'En tu "index.html", añade la siguiente linea dentro del "head"',
+                image: '/assets/code-samples/js/html-script.png',
+                code: `<script src='main.js'></script>`
+            },
             {
                 name: 'hello-world',
                 title: '¡Hola Mundo!',
-                text: 'Crea un archivo "styles.css" y escribe esto',
-                image: '/assets/code-samples/css/hello-world.png',
-                code: `body::before {
-                    content: '¡Hola Mundo!';
-                    color: gold;
-                    background: grey;
-                    padding: 5px 10px;
-                    font-family: cursive;
-                }`
+                text: 'Crea un archivo main.js y escribe esto',
+                image: '/assets/code-samples/js/hello-world.png',
+                code: `console.log('¡Hola Mundo!')`
+            },
+            {
+                name: 'hello-world-dom',
+                title: 'Hola Mundo usando el DOM',
+                text: 'En tu archivo "main.js", añade esto',
+                image: '/assets/code-samples/js/hello-world-dom.png',
+                code: `const body = document.body;
+                body.textContent = '¡Hola Mundo!';`
             }
         ],
         extra: {
             tips: [
                 'Usa comentarios para añadir contexto a tu código',
                 'Documenta solo cuando es necesario',
-                'Las constantes deberían empezar con mayúsculas'
+                'Las constantes se verían mejor con mayúsculas',
+                'El asincronismo es una herramienta poderosa',
+                'Desestructurar: La nueva forma de construir'
             ],
             curius: [
                 'La palabra clave "this" no solo es para constructores',
                 'Javascript no es nada de Java',
                 'Creado en tan solo 10 días',
-                'La web no es exclusiva de Javascript'
+                'Javascript se puede usar tanto en el Frontend como en Backend',
+                'El 67.9% de los programadores prefiere Javascript'
             ],
             phrases: [
-                'El arte de nombrar variables depende del lienzo sobre el que lo manifiestas',
-                'La asincronía es esa pizca de sal que no sabías que necesitabas'
+                'Condicionales anidados, un laberinto del lector condenado',
+                'Un const bien definido, evita errores en el camino',
+                'Funciones anónimas sin razón, el depurador clama explicación',
+                'Un try...catch a tiempo, evita el caos y el lamento',
+                'Condiciones sin else, dejan decisiones sin contener'
             ]
         }
     },
@@ -178,16 +333,81 @@ export const Techs = [
         description: 'Variante de JavaScript que fortalece el tipado.',
         logo: '/assets/techs-logos/ts-logo.svg',
         age: '2012',
-        resources: ['https://www.w3schools.com/typescript/', 'https://learn.microsoft.com/es-es/training/modules/typescript-get-started/', 'https://www.freecodecamp.org/news/learn-typescript-beginners-guide/', 'https://www.youtube.com/watch?v=4W3UWjyyVkQ', 'https://www.youtube.com/watch?v=YKclM8IxkfI'],
-        tutorial: {
-            helloWorld: {
-                text: '',
-                image: ''
+        resources: [
+            {
+                type: 'web',
+                from: 'W3Schools',
+                link: 'https://www.w3schools.com/typescript/',
+                title: 'Tutorial de Typescript',
+                image: '/assets/resources-preview/ts/w3sts.png'
+            },
+            {
+                type: 'web',
+                from: 'Microsoft Team',
+                link: 'https://learn.microsoft.com/es-es/training/modules/typescript-get-started/',
+                title: 'Curso de Typescript',
+                image: '/assets/resources-preview/ts/microsoftts.png'
+            },
+            {
+                type: 'web',
+                from: 'freeCodeCamp',
+                link: 'https://www.freecodecamp.org/news/learn-typescript-beginners-guide/',
+                title: 'Guía de Typescript',
+                image: '/assets/resources-preview/ts/freecodecampts.png'
+            },
+            {
+                type: 'video',
+                from: 'Mouredev',
+                link: 'https://www.youtube.com/watch?v=4W3UWjyyVkQ',
+                title: 'Typescript desde Cero',
+                image: '/assets/resources-preview/ts/mouredevts.png'
+            },
+            {
+                type: 'video',
+                from: 'Midudev',
+                link: 'https://www.youtube.com/watch?v=YKclM8IxkfI',
+                title: 'Aprene Typescript Ya',
+                image: '/assets/resources-preview/ts/midudevts.png'
             }
-        },
+        ],
+        tutorial: [
+            {
+                name: 'install',
+                title: 'Instala Typescript',
+                text: 'En tu consola, ejecuta el siguiente comando',
+                image: '/assets/code-samples/ts/install.png',
+                code: `npm install -g typescript`
+            },
+            {
+                name: 'html-script',
+                title: 'Enlazar el HTML',
+                text: 'En tu "index.html" añade esto dentro del ""body" y abre ese archivo en el navegador',
+                image: '/assets/code-samples/ts/html-script.png',
+                code: `<script src='main.js'></script>`
+            },
+            {
+                name: 'hello-world',
+                title: '¡Hola Mundo!',
+                text: 'Crea un archivo main.ts y escribe esto',
+                image: '/assets/code-samples/ts/hello-world.png',
+                code: `let mensaje: string = '¡Hola Mundo!';
+                console.log(mensaje);`
+            },
+            {
+                name: 'compile',
+                title: 'Compila tu código',
+                text: 'En la consola, ejecuta esto',
+                image: '/assets/code-samples/ts/compile.png',
+                code: `tsc main.ts`
+            }
+        ],
         extra: {
             tips: [
-                'Piensalo dos veces antes de declarar una constante'
+                'Piensalo dos veces antes de declarar una constante',
+                'Define siempre el tipo de tus variables',
+                'La asincronía no fue incluida para ignorarse',
+                'Habilitar el modo estricto es gratificante a futuro',
+                'Las funciones flechas facilitan cualquier solución'
             ],
             curius: [
                 'El 65% de errores resultan tras un fallo de tipeo',
@@ -198,7 +418,10 @@ export const Techs = [
             ],
             phrases: [
                 'La perfección no es para desesperar, pero sí necesita funcionar',
-                'Más que una potencia venidera, un seguro de enmienda'
+                'En TypeScript, "interface" define el contrato, código claro y sin quebrantos.',
+                "Any evitado, incertidumbre disipada, TypeScript empoderado",
+                'En readonly y const, la inmutabilidad se celebra',
+                'En TypeScript, la precisión no es capricho, es el camino claro'
             ]
         }
     },

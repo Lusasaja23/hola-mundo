@@ -1,32 +1,35 @@
-/* ! COLORES */
-/* ! FUENTES */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&display=swap");
-.loadingPage {
+.firstContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
-.loadingPage h1 {
-  font-size: 2em;
-  font-weight: normal;
-}
-.loadingPage i {
+.firstContainer .charchingBig {
   font-size: 4em;
-  color: #404E6C;
+}
+.firstContainer .loadingTitle {
+  font-size: 3em;
+}
+@media (width <= 375px) {
+  .firstContainer .loadingTitle {
+    font-size: 2.5em;
+  }
+}
+@media (width <= 320px) {
+  .firstContainer .loadingTitle {
+    font-size: 2em;
+  }
 }
 
 .loadingInline {
   display: flex;
-  align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
-.loadingInline h1 {
-  font-size: 0.9em;
-  font-weight: normal;
-}
-.loadingInline i {
+.loadingInline .charchingSmall {
   font-size: 1.5em;
-  color: #404E6C;
+}
+.loadingInline .loadingTitle {
+  font-size: 1.2em;
 }

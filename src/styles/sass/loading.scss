@@ -1,35 +1,36 @@
-@use './variables.scss';
+@use './basis/variables.scss';
 
-.loadingPage {
+.firstContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 
-    & h1 {
-        font-size: 2em;
-        font-weight: normal;
+    & .charchingBig {
+        font-size: 4em;
     }
 
-    & i {
-        font-size: 4em;
-        color: variables.$accent-200;
+    & .loadingTitle {
+        font-size: 3em;
+        @media(width <= 375px) {
+            font-size: 2.5em;
+        }
+        @media(width <= 320px) {
+            font-size: 2em;
+        }
     }
 }
 
 .loadingInline {
     display: flex;
-    align-items: center;
-    gap: 5px;
+    gap: 10px;
 
-    & h1 {
-        font-size: 0.9em;
-        font-weight: normal;
+    & .charchingSmall {
+        font-size: 1.5em;
     }
 
-    & i {
-        font-size: 1.5em;
-        color: variables.$accent-200;
+    & .loadingTitle {
+        font-size: 1.2em;
     }
 }

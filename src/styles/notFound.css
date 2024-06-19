@@ -55,8 +55,7 @@ body {
 .firstContainer header .logo {
   width: 100px;
   height: 100px;
-  filter: drop-shadow(0 0 5px #e0e0e0);
-  transition: margin 0.5s ease-in-out, filter 0.5s ease;
+  transition: margin 0.5s ease-in-out;
   cursor: pointer;
 }
 @media (width <= 425px) {
@@ -73,7 +72,6 @@ body {
 }
 .firstContainer header .logo:hover {
   margin: 0 10px;
-  filter: drop-shadow(0 0 7.5px #e0e0e0);
 }
 .firstContainer header .headerNav {
   display: flex;
@@ -116,20 +114,6 @@ body {
 .firstContainer header .headerNav i:hover {
   color: #d3be6f;
 }
-.firstContainer header .headerNav i#cog:hover {
-  animation: rotate 1s infinite;
-}
-@keyframes rotate {
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.firstContainer header .headerNav i#bell:hover {
-  animation: tada 0.8s forwards;
-}
 .firstContainer footer {
   display: flex;
   justify-content: center;
@@ -169,145 +153,58 @@ body {
   }
 }
 
-.configMenu[open] {
-  overflow: hidden;
-  width: max-content;
-  z-index: 9999;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 20px 40px;
+strong {
+  color: #d3be6f;
+}
+
+.firstContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 30px;
-  background: radial-gradient(#0F0F1A 50%, rgba(15, 15, 26, 0.99));
-  color: #e0e0e0;
 }
-.configMenu[open] h1 {
-  font-size: 2em;
-  text-align: center;
-}
-@media (width <= 425px) {
-  .configMenu[open] h1 {
-    font-size: 1.5em;
-  }
-}
-@media (width <= 320px) {
-  .configMenu[open] h1 {
-    font-size: 1.2em;
-  }
-}
-.configMenu[open] .options {
+.firstContainer .text {
   display: flex;
   flex-direction: column;
-  background: rgb(18, 18, 31);
-  width: 100%;
-}
-.configMenu[open] .options .item {
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
-.configMenu[open] .options .item:hover {
-  background: #18182a;
+.firstContainer .text .title {
+  font-family: "Reddit Mono", monospace;
+  font-size: 4em;
+  color: #d3be6f;
+  text-align: center;
 }
-.configMenu[open] .options .item .name {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1em;
+@media (width <= 768px) {
+  .firstContainer .text .title {
+    font-size: 3.5em;
+  }
 }
-@media (width <= 425px) {
-  .configMenu[open] .options .item .name {
+@media (width <= 375px) {
+  .firstContainer .text .title {
+    font-size: 2.5em;
+  }
+}
+.firstContainer .text .description {
+  font-size: 1.1em;
+  text-align: center;
+}
+@media (width <= 768px) {
+  .firstContainer .text .description {
     font-size: 0.9em;
   }
 }
-@media (width <= 320px) {
-  .configMenu[open] .options .item .name {
-    font-size: 0.8em;
-  }
-}
-.configMenu[open] .options .item .icon {
-  font-size: 2em;
-}
-@media (width <= 425px) {
-  .configMenu[open] .options .item .icon {
-    font-size: 1.5em;
-  }
-}
-@media (width <= 320px) {
-  .configMenu[open] .options .item .icon {
-    font-size: 1.3em;
-  }
-}
-.configMenu[open] .options .item .icon.active {
-  color: #d3be6f;
-}
-.configMenu[open] .close {
+.firstContainer .return {
   background: transparent;
   border: 2px solid #e0e0e0;
   border-bottom: 4px solid #e0e0e0;
   border-radius: 4px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-size: 1.2em;
   color: #e0e0e0;
 }
-.configMenu[open] .close:hover {
+.firstContainer .return:hover {
   color: #d3be6f;
   border-bottom: 4px solid #d3be6f;
-}
-@media (width <= 425px) {
-  .configMenu[open] .close {
-    font-size: 1em;
-  }
-}
-@keyframes ownFadeInDown {
-  from {
-    opacity: 0;
-    transform: translate(-50%, -60%);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.guideTooltip {
-  z-index: 9998;
-  width: max-content;
-  max-width: 300px;
-  text-align: center;
-  font-family: "Reddit Mono", monospace;
-}
-@media (width <= 768px) {
-  .guideTooltip {
-    max-width: 250px;
-    word-wrap: break-word;
-    height: max-content;
-    padding: 5px 10px;
-  }
-}
-@media (width <= 425px) {
-  .guideTooltip {
-    display: none;
-  }
-}
-@media (width <= 768px) {
-  .guideTooltip.fix {
-    max-width: 150px;
-    word-wrap: break-word;
-    height: max-content;
-  }
-}
-.guideTooltip small {
-  font-size: 1em;
-}
-@media (width <= 768px) {
-  .guideTooltip small {
-    font-size: 0.6em;
-  }
 }

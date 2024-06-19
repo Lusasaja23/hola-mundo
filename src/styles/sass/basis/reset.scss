@@ -11,6 +11,14 @@ a {
     }
 }
 
-img.reset {
-    object-fit: cover;
+button {
+    cursor: pointer;
+    user-select: none;
+    &.reset {
+        border: none;
+    }
+}
+
+ul.reset {
+    list-style: none;
 }

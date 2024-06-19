@@ -1,0 +1,56 @@
+@use './basis/variables.scss';
+@use './basis/structure.scss';
+
+strong {
+    color: variables.$secondary;
+}
+
+.firstContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    & .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        & .title {
+            font-family: variables.$header;
+            font-size: 4em;
+            color: variables.$secondary;
+            text-align: center;
+            @media (width <= 768px) {
+                font-size: 3.5em;
+            }
+            @media (width <= 375px) {
+                font-size: 2.5em;
+            }
+        }
+
+        & .description {
+            font-size: 1.1em;
+            text-align: center;
+            @media (width <= 768px) {
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    & .return {
+        background: transparent;
+        border: 2px solid variables.$white;
+        border-bottom: 4px solid variables.$white;
+        border-radius: 4px;
+        padding: 15px 20px;
+        font-size: 1.2em;
+        color: variables.$white;
+        &:hover {
+            color: variables.$secondary;
+            border-bottom: 4px solid variables.$secondary;
+        }
+    }
+}

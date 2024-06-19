@@ -5,7 +5,7 @@ export const Techs = [
         fullstack: false,
         title: 'HTML',
         description: 'Lenguaje de estructuración predilecto y esencial para la web.',
-        logo: '/assets/techs-logos/html-logo.svg',
+        logo: '/assets/techs-logos/html.svg',
         age: '1995',
         resources: [
             {
@@ -98,7 +98,7 @@ export const Techs = [
         fullstack: false,
         title: 'CSS',
         description: 'Usado para diseñar y estilizar páginas web.',
-        logo: '/assets/techs-logos/css-logo.svg',
+        logo: '/assets/techs-logos/css.svg',
         age: '1996',
         resources: [
             {
@@ -210,7 +210,7 @@ export const Techs = [
         fullstack: true,
         title: 'JavaScript',
         description: 'Base de la interactividad en los sitios web.',
-        logo: '/assets/techs-logos/js-logo.svg',
+        logo: '/assets/techs-logos/js.svg',
         age: '1995',
         resources: [
             {
@@ -331,7 +331,7 @@ export const Techs = [
         fullstack: true,
         title: 'TypeScript',
         description: 'Variante de JavaScript que fortalece el tipado.',
-        logo: '/assets/techs-logos/ts-logo.svg',
+        logo: '/assets/techs-logos/ts.svg',
         age: '2012',
         resources: [
             {
@@ -431,7 +431,7 @@ export const Techs = [
         fullstack: false,
         title: 'React',
         description: 'Biblioteca para la creación de interfaces de usuario.',
-        logo: '/assets/techs-logos/react-logo.svg',
+        logo: '/assets/techs-logos/react.svg',
         age: '2013',
         resources: ['https://github.com/midudev/aprendiendo-react', 'https://www.youtube.com/watch?v=pFyAu4R684s', 'https://jonmircha.com/react', 'https://www.youtube.com/watch?v=rLoWMU4L_qE', 'https://developer.mozilla.org/es/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started'],
         tutorial: {
@@ -467,7 +467,7 @@ export const Techs = [
         fullstack: false,
         title: 'Vue',
         description: 'Framework de JavaScript para la creación de interfaces de usuario.',
-        logo: '/assets/techs-logos/vue-logo.svg',
+        logo: '/assets/techs-logos/vue.svg',
         age: '2014',
         resources: ['https://lenguajejs.com/vue/'],
         tutorial: {
@@ -501,7 +501,7 @@ export const Techs = [
         fullstack: true,
         title: 'Python',
         description: 'Lenguaje de programación sencillo y poderoso a la vez.',
-        logo: '/assets/techs-logos/python-logo.svg',
+        logo: '/assets/techs-logos/python.svg',
         age: '1989',
         resources: [''],
         tutorial: {
@@ -522,7 +522,7 @@ export const Techs = [
         fullstack: true,
         title: 'Java',
         description: 'Lenguaje de programación orientado a objetos y muy usado.',
-        logo: '/assets/techs-logos/java-logo.svg',
+        logo: '/assets/techs-logos/java.svg',
         age: '1995',
         resources: [''],
         tutorial: {
@@ -543,7 +543,7 @@ export const Techs = [
         fullstack: false,
         title: 'C++',
         description: 'Usado para la creación de videojuegos y aplicaciones.',
-        logo: '/assets/techs-logos/cpp-logo.svg',
+        logo: '/assets/techs-logos/cpp.svg',
         age: '1979',
         resources: [''],
         tutorial: {

@@ -7,6 +7,7 @@ import RandomTech from "../components/home/RandomTech"
 import ExtraData from '../components/home/ExtraData'
 import {LoadingPage} from "../components/Loading"
 
+import '../styles/structure.css'
 import '../styles/home.css'
 import { Techs } from '../data/techs'
 import { useState, useEffect } from "react"
@@ -16,21 +17,24 @@ import 'react-tooltip/dist/react-tooltip.css'
 export default function HomePage() {  
   const [randomTech, setRandomTech] = useState(null);
   const [tutoUI, setTutoUI] = useState(true)
-  const [isLoaded, setIsLoaded] = useState(false); // Nuevo estado para indicar si se ha cargado
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const savedTutoUI = localStorage.getItem('tutoUI');
-    console.info("savedTutoUI guadado como:", savedTutoUI); // Para depuración
-    if (savedTutoUI !== null) {
-      setTutoUI(JSON.parse(savedTutoUI));
-    }
-    setIsLoaded(true); // Indica que se ha completado la carga
     setRandomTech(Techs[Math.floor(Math.random() * Techs.length)]);
   }, []);
 
   useEffect(() => {
-    if (isLoaded) { // Solo guarda en localStorage después de que se haya cargado
-      console.info("Guardando tutoUI como:", tutoUI); // Para depuración
+    const savedTutoUI = localStorage.getItem('tutoUI');
+    console.info("savedTutoUI guardado como:", savedTutoUI); 
+    if (savedTutoUI !== null) {
+      setTutoUI(JSON.parse(savedTutoUI));
+    }
+    setIsLoaded(true); 
+  }, []);
+
+  useEffect(() => {
+    if (isLoaded) { 
+      console.info("Guardando tutoUI como:", tutoUI); 
       localStorage.setItem('tutoUI', JSON.stringify(tutoUI));
     }
   }, [tutoUI, isLoaded]);
@@ -44,7 +48,7 @@ export default function HomePage() {
   return (
     <div className="firstContainer homePage">
       <Header tutoUI={tutoUI} setTutoUI={setTutoUI}></Header>
-      <main>
+      <main className="homeMain">
         <TechLogo tech={randomTech}></TechLogo>
         <Tooltip className="guideTooltip" anchorSelect=".techLogo" place="right" type="dark" isOpen={tutoUI} offset={20}>
           <small>Click para Aprender Más</small>

@@ -1,24 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&display=swap");
-.firstContainer {
+.loadingPage {
+  width: 100%;
+  min-height: 100vh;
+  background: #0F0F1A;
+  color: #e0e0e0;
+  padding: 30px;
+  font-family: "Merriweather", serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-.firstContainer .charchingBig {
+.loadingPage .charchingBig {
   font-size: 4em;
 }
-.firstContainer .loadingTitle {
+.loadingPage .loadingTitle {
   font-size: 3em;
 }
 @media (width <= 375px) {
-  .firstContainer .loadingTitle {
+  .loadingPage .loadingTitle {
     font-size: 2.5em;
   }
 }
 @media (width <= 320px) {
-  .firstContainer .loadingTitle {
+  .loadingPage .loadingTitle {
     font-size: 2em;
   }
 }

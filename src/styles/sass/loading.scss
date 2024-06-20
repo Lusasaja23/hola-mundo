@@ -1,6 +1,12 @@
 @use './basis/variables.scss';
 
-.firstContainer {
+.loadingPage {
+    width: 100%;
+    min-height: 100vh;
+    background: variables.$black;
+    color: variables.$white;
+    padding: 30px;
+    font-family: variables.$all;
     display: flex;
     flex-direction: column;
     justify-content: center;

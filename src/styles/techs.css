@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&display=swap");
+.techsMain {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.techsMain .title {
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+  border-bottom: 3px solid #d3be6f;
+  transition: border-bottom 0.3s ease-in-out, color 0.5s ease;
+  cursor: default;
+}
+.techsMain .title:hover {
+  border-bottom: 3px solid transparent;
+  color: #d3be6f;
+}
+.techsMain .searchTech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.techsMain .searchTech form {
+  display: flex;
+  filter: drop-shadow(0px 0px 4px #5a5a9b);
+}
+.techsMain .searchTech form .input {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-family: "Reddit Mono", monospace;
+  background: rgb(18, 18, 31);
+  color: #A2B9BC;
+  border: 0;
+}
+.techsMain .searchTech form .input::-webkit-input-placeholder {
+  color: #404E6C;
+}
+.techsMain .searchTech form .button {
+  background: #d3be6f;
+  border: 0;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1.2em;
+}
+.techsMain .searchTech .indication {
+  font-size: 0.7em;
+}
+.techsMain .searchTech .indication .keyword {
+  color: #d3be6f;
+  cursor: default;
+}
+.techsMain .searchTech .searchTooltip {
+  width: max-content;
+  max-width: 250px;
+  text-align: center;
+}
+.techsMain .searchTech .searchTooltip small {
+  font-size: 0.8em;
+}
+.techsMain .gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 50px;
+  gap: 50px;
+  width: 100%;
+}
+.techsMain .gallery .category {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.techsMain .gallery .category .catName {
+  font-family: "Reddit Mono", monospace;
+  font-size: 2em;
+  margin: 0;
+}
+.techsMain .gallery .category .carousel {
+  overflow-x: auto;
+  width: 100%;
+  display: flex;
+  border-left: 5px solid #e0e0e0;
+  padding-left: 10px;
+  background: #10101c;
+  transition: border-left 0.3s ease;
+}
+.techsMain .gallery .category .carousel:hover {
+  border-left: 5px solid #d3be6f;
+}
+.techsMain .gallery .category .carousel::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+.techsMain .gallery .category .carousel::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.techsMain .gallery .category .carousel::-webkit-scrollbar-thumb {
+  background: #404E6C;
+  border-radius: 10px;
+}
+.techsMain .gallery .category .carousel .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 60px;
+  text-align: center;
+  cursor: pointer;
+}
+.techsMain .gallery .category .carousel .item:hover {
+  background: rgb(18, 18, 31);
+}

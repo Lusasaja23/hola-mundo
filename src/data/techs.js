@@ -2,7 +2,8 @@ export const Techs = [
     {
         name: 'html',
         type: 'frontend',
-        fullstack: false,
+        isfullstack: false,
+        isframework: false,
         title: 'HTML',
         description: 'Lenguaje de estructuración predilecto y esencial para la web.',
         logo: '/assets/techs-logos/html.svg',
@@ -95,11 +96,13 @@ export const Techs = [
     {
         name: 'css',
         type: 'frontend',
-        fullstack: false,
+        isfullstack: false,
+        isframework: false,
         title: 'CSS',
         description: 'Usado para diseñar y estilizar páginas web.',
         logo: '/assets/techs-logos/css.svg',
         age: '1996',
+        topic: 2,
         resources: [
             {
                 type: 'web',
@@ -207,7 +210,8 @@ export const Techs = [
     {
         name: 'js',
         type: 'frontend',
-        fullstack: true,
+        isfullstack: true,
+        isframework: false,
         title: 'JavaScript',
         description: 'Base de la interactividad en los sitios web.',
         logo: '/assets/techs-logos/js.svg',
@@ -328,7 +332,8 @@ export const Techs = [
     {
         name: 'ts',
         type: 'frontend',
-        fullstack: true,
+        isfullstack: true,
+        isframework: false,
         title: 'TypeScript',
         description: 'Variante de JavaScript que fortalece el tipado.',
         logo: '/assets/techs-logos/ts.svg',
@@ -428,7 +433,8 @@ export const Techs = [
     {
         name: 'react',
         type: 'frontend',
-        fullstack: false,
+        isfullstack: false,
+        isframework: true,
         title: 'React',
         description: 'Biblioteca para la creación de interfaces de usuario.',
         logo: '/assets/techs-logos/react.svg',
@@ -464,7 +470,8 @@ export const Techs = [
     {
         name: 'vue',
         type: 'frontend',
-        fullstack: false,
+        isfullstack: false,
+        isframework: true,
         title: 'Vue',
         description: 'Framework de JavaScript para la creación de interfaces de usuario.',
         logo: '/assets/techs-logos/vue.svg',
@@ -498,7 +505,8 @@ export const Techs = [
     {
         name: 'python',
         type: 'backend',
-        fullstack: true,
+        isfullstack: true,
+        isframework: false,
         title: 'Python',
         description: 'Lenguaje de programación sencillo y poderoso a la vez.',
         logo: '/assets/techs-logos/python.svg',
@@ -519,7 +527,8 @@ export const Techs = [
     {
         name: 'java',
         type: 'backend',
-        fullstack: true,
+        isfullstack: true,
+        isframework: false,
         title: 'Java',
         description: 'Lenguaje de programación orientado a objetos y muy usado.',
         logo: '/assets/techs-logos/java.svg',
@@ -540,7 +549,8 @@ export const Techs = [
     {
         name: 'cpp',
         type: 'backend',
-        fullstack: false,
+        isfullstack: false,
+        isframework: false,
         title: 'C++',
         description: 'Usado para la creación de videojuegos y aplicaciones.',
         logo: '/assets/techs-logos/cpp.svg',
